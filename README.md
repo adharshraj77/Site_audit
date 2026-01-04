@@ -191,9 +191,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-**Your Name** - [@yourusername](https://twitter.com/yourusername)
 
-Project Link: [https://github.com/YOUR_USERNAME/site-audit-pro](https://github.com/YOUR_USERNAME/site-audit-pro)
+
+Project Link: https://github.com/adharshraj77/Site_audit
 
 ---
 
@@ -201,15 +201,12 @@ Project Link: [https://github.com/YOUR_USERNAME/site-audit-pro](https://github.c
 
 ### Deploy on Vercel (Recommended)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/site-audit-pro)
+[![Deploy with Vercel](https://vercel.com/button)](https://site-audit-adharsh.vercel.app/)
 
 1. Connect your GitHub repository to Vercel
 2. Automatic deployments on every push
 3. Free SSL and custom domain support
 
-### Deploy on Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/YOUR_USERNAME/site-audit-pro)
 
 ---
 
