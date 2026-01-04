@@ -1,70 +1,229 @@
-# Getting Started with Create React App
+# 🔍 Site Audit Pro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+*AI-Powered Website Performance & Security Auditor*
 
-## Available Scripts
+[![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.1-06B6D4?logo=tailwindcss)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-In the project directory, you can run:
+A comprehensive dashboard that transforms website analysis into actionable business insights. Analyze performance, SEO, security, and accessibility metrics through an intuitive interface with AI-powered recommendations.
 
-### `npm start`
+![Site Audit Pro Dashboard](https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📊 **Comprehensive Analysis**
+- **Performance Metrics**: Core Web Vitals (FCP, LCP, CLS, TBT) with actionable insights
+- **SEO Audit**: Technical SEO analysis with optimization recommendations
+- **Security Scan**: Cookie analysis, header checks, and vulnerability detection
+- **Accessibility**: WCAG compliance checks and contrast ratio validation
 
-### `npm test`
+### 🚀 **Business Intelligence**
+- **Revenue Projections**: Estimated revenue loss due to performance issues
+- **Conversion Uplift**: AI-calculated potential conversion improvements
+- **Market Positioning**: Competitive analysis and benchmarking
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🎯 **Smart Features**
+- **Interactive Reports**: Tabbed interface with detailed breakdowns
+- **Export Options**: PDF, JSON, CSV, and HTML report generation
+- **Scan History**: LocalStorage persistence for recent audits
+- **Dark/Light Mode**: Full theme support with system preference detection
+- **Code Snippets**: Implementation-ready solutions for identified issues
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Technology | Purpose | Version |
+|------------|---------|---------|
+| **React 18** | UI Framework | 18.2.0 |
+| **Tailwind CSS** | Styling & Design System | 3.4.1 |
+| **Lucide React** | Icon Library | Latest |
+| **Context API** | State Management | Built-in |
+| **LocalStorage** | Data Persistence | Browser API |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
+- Node.js 16.14.0 or higher
+- npm 8.5.0 or higher
+- Modern web browser
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/site-audit-pro.git
+   cd site-audit-pro
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Configure environment** (Optional)
+   Create `.env` file in root:
+   ```env
+   REACT_APP_ANALYTICS_ID=your-id-here
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Start development server**
+   ```bash
+   npm start
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+5. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📖 Usage Guide
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 1. **Initial Analysis**
+   - Enter any website URL (e.g., `https://example.com`)
+   - Click "Analyze Site" to begin comprehensive scan
+   - View real-time progress through 6 analysis stages
 
-### Code Splitting
+### 2. **Interpret Results**
+   - **Overview Tab**: Quick scorecard with overall rating
+   - **Technical Audit**: Detailed performance metrics and tech stack
+   - **SEO & Access**: Search optimization and accessibility findings
+   - **Security**: Cookie analysis and security header checks
+   - **Business Intel**: Revenue impact and market positioning
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 3. **Take Action**
+   - Click any issue for detailed solution with code snippets
+   - Export reports in multiple formats for sharing
+   - Track improvement over time using scan history
 
-### Analyzing the Bundle Size
+## 📁 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+site-audit-pro/
+├── src/
+│   ├── components/          # React components
+│   │   ├── LandingView.js   # Landing page
+│   │   ├── AnalysisProgress.js # Progress indicator
+│   │   └── AuditResults.js  # Results dashboard
+│   ├── contexts/            # React contexts
+│   │   └── ToastContext.js  # Notification system
+│   ├── utils/               # Utility functions
+│   │   └── dataGenerator.js # Mock data generator
+│   ├── App.js              # Main application
+│   └── index.js            # Entry point
+├── public/                  # Static assets
+├── package.json            # Dependencies
+├── tailwind.config.js      # Tailwind configuration
+└── README.md               # This file
+```
 
-### Making a Progressive Web App
+## 🎨 UI Components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+| Component | Purpose |
+|-----------|---------|
+| **Button** | Interactive elements with 6 variants |
+| **Card** | Content containers with shadow effects |
+| **Badge** | Status indicators and labels |
+| **Progress** | Animated progress bars |
+| **Tabs** | Tabbed navigation system |
+| **Dialog** | Modal windows for details |
+| **Toast** | Notification system |
 
-### Advanced Configuration
+## 🔧 Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Tailwind Customization
+Edit `tailwind.config.js`:
+```javascript
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: 'class', // Enables class-based dark mode
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#eff6ff',
+          600: '#2563eb',
+          700: '#1d4ed8',
+        },
+      },
+      animation: {
+        'slide-in': 'slideIn 0.3s ease-out',
+      }
+    },
+  },
+}
+```
 
-### Deployment
+### Adding New Icons
+```javascript
+import { NewIcon } from 'lucide-react';
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+// Use in component:
+<NewIcon className="w-5 h-5" />
+```
 
-### `npm run build` fails to minify
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We welcome contributions! Here's how:
+
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/AmazingFeature`)
+3. **Commit** changes (`git commit -m 'Add AmazingFeature'`)
+4. **Push** to branch (`git push origin feature/AmazingFeature`)
+5. **Open** a Pull Request
+
+### Development Guidelines
+- Follow existing code style and structure
+- Add comments for complex logic
+- Update documentation accordingly
+- Test changes thoroughly
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🌟 Acknowledgments
+
+- Icons by [Lucide](https://lucide.dev/)
+- UI Inspiration from [shadcn/ui](https://ui.shadcn.com/)
+- Performance metrics based on [Google Core Web Vitals](https://web.dev/vitals/)
+
+## 📞 Contact
+
+**Your Name** - [@yourusername](https://twitter.com/yourusername)
+
+Project Link: [https://github.com/YOUR_USERNAME/site-audit-pro](https://github.com/YOUR_USERNAME/site-audit-pro)
+
+---
+
+## 🚀 Deployment
+
+### Deploy on Vercel (Recommended)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/site-audit-pro)
+
+1. Connect your GitHub repository to Vercel
+2. Automatic deployments on every push
+3. Free SSL and custom domain support
+
+### Deploy on Netlify
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/YOUR_USERNAME/site-audit-pro)
+
+---
+
+<div align="center">
+  <sub>Built with ❤️ by the Site Audit Pro team</sub><br>
+  <sub>If you find this useful, give it a ⭐ on GitHub!</sub>
+</div>
+
+## 📊 Roadmap
+
+- [ ] **Real API Integration** - Connect with Lighthouse, PageSpeed Insights
+- [ ] **Multi-page Analysis** - Crawl entire websites
+- [ ] **Team Collaboration** - Share reports with team members
+- [ ] **Scheduled Scans** - Automatic weekly/monthly audits
+- [ ] **Competitor Comparison** - Benchmark against competitors
+- [ ] **Mobile App** - React Native version
+
